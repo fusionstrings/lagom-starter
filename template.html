@@ -1,0 +1,17 @@
+<body>
+  <main></main>
+
+  <script type="module">
+    import * as React from 'react';
+    import { createRoot } from 'client';
+
+    function Dom() {
+      return (React.createElement("h1", null, "Hello, World!"));
+    }
+
+    const container = document.querySelector('main');
+    const root = createRoot(container);
+    root.render(React.createElement(Dom, null));
+
+  </script>
+</body>
